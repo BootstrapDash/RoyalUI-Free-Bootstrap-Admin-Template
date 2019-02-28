@@ -1,0 +1,106 @@
+/* Demo Styles */
+// Add spacing to Boostrap components for demo purpose
+.template-demo {
+  > .btn {
+    @extend .mt-3;
+    @extend .mr-2;
+  }
+
+  > .btn-group,
+  >  .btn-group-vertical {
+    @extend .mt-2;
+    @extend .mr-2;
+  }
+
+  .progress {
+    margin-top: 1.5rem;
+  }
+
+  > h2,
+   > h3,
+   > h4,
+   > h5,
+   > h6,
+  > h1 {
+    border-top: 1px solid $border-color;
+    padding: 0.5rem 0 0;
+  }
+
+  > .dropdown {
+    display: inline-block;
+    @extend .mr-2;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.chartjs-legend {
+  ul {
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    @include display-flex;
+    @include align-items(flex-end);
+    @include flex-direction(column);
+    @include flex-wrap(wrap);
+    li {
+      @include display-flex;
+      @include align-items(center);
+      span {
+        width: 2.25rem;
+        height: 1rem;
+        margin-right: .4rem;
+        display: inline-block;
+        font-size: $default-font-size;
+      }
+    }
+  }
+  .rtl & {
+    ul {
+      padding-right: 0;
+      li {
+        margin-right: 0;
+        margin-left: 8%;
+        span {
+          margin-right: 0;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  &.analytics-legend {
+    ul {
+      padding-left: 0;
+    }
+  }
+}
+
+.documentation {
+  padding-top: 0;
+  max-width: 100%;
+  .content-wrapper {
+    padding-top: 0;
+    min-height: calc(100vh - #{$footer-height});
+  }
+}
+
+.doc-header {
+  position: fixed;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  z-index: 2;
+  background: $content-bg;
+}
+
+.doc-content {
+  padding-top: 157px;
+}
+
+.show {
+  > .btn-out-line-light {
+    .dropdown-toggle {
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
