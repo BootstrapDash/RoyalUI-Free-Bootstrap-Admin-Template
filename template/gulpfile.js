@@ -163,7 +163,14 @@ gulp.task('copyRecursiveVendorFiles', function () {
     return merge(chartJs, ti, tiFonts);
 });
 
+//Copy essential map files
+gulp.task('copyMapFiles', function() {
+    var map1 = gulp.src('node_modules/bootstrap/dist/js/bootstrap.min.js.map')
+        .pipe(gulp.dest('./vendors/base'));
+    return merge(map1);
+});
+
 /*sequence for building vendor scripts and styles*/
-gulp.task('bundleVendors', gulp.series('clean:vendors', 'buildBaseVendorStyles','buildBaseVendorScripts','copyRecursiveVendorFiles'));
+gulp.task('bundleVendors', gulp.series('clean:vendors', 'buildBaseVendorStyles','buildBaseVendorScripts','copyRecursiveVendorFiles','copyMapFiles'));
 
 gulp.task('default', gulp.series('serve'));
