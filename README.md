@@ -20,6 +20,6 @@ Check out the preview of Royal Admin template [here](http://www.templatewatch.co
     Start editing the code as per your requirement
   </li>
   <li>
-    If you wish to customize the template, use the command 'npm install' to install the necessary dependencies. Refer <a href="http://www.urbanui.com/royalui/template/documentation/documentation.html">documentaion</a> for more details on customization.
+    If you wish to customize the template, use the command 'npm install' to install the necessary dependencies. Refer <a href="http://www.templatewatch.com/royalui/template/documentation/documentation.html">documentaion</a> for more details on customization.
   </li>
 </ul>
