@@ -56,11 +56,11 @@
   }
 
   .remove {
-    @extend .ml-auto;
+    @extend .ms-auto;
     @extend .text-secondary;
     .rtl & {
-      @extend .ml-0;
-      @extend .mr-auto;
+      @extend .ms-0;
+      @extend .me-auto;
     }
     cursor: pointer;
     font-size: 1.1rem;

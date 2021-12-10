@@ -31,7 +31,7 @@ dl {
   li {
     &:before {
       content: '\e64c';
-      color: theme-color(danger);
+      color: $danger;
     }
   }
 }
@@ -40,7 +40,7 @@ dl {
   li {
     &:before {
       content: '\e649';
-      color: theme-color(success);
+      color: $success;
     }
   }
 }
@@ -49,7 +49,7 @@ dl {
   li {
     &:before {
       content: '\e60a';
-      color: theme-color(warning);
+      color: $warning;
     }
   }
 }

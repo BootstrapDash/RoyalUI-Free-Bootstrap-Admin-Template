@@ -19,7 +19,7 @@
     width: $sidebar-width-lg;
     height: $navbar-height;
     .navbar-brand {
-      color: lighten(color(gray-dark), 20%);
+      color: lighten($gray-dark, 20%);
       font-size: 1.5rem;
       margin-right: 0;
       padding: .25rem 0;
@@ -31,7 +31,7 @@
       &:active,
       &:focus,
       &:hover {
-        color: lighten(color(gray-dark), 10%);
+        color: lighten($gray-dark, 10%);
       }
 
       img {
@@ -78,6 +78,9 @@
       font-size: 1.25rem;
       padding: 0;
       border-radius: 0;
+      &:focus {
+        box-shadow: none;
+      }
       &:not(.navbar-toggler-right) {
         @media (max-width: 991px) {
           display: none;
@@ -112,6 +115,7 @@
             width: 400px;
             border: 1px solid $border-color;
             border-radius: 2rem;
+            align-items: center;
             .form-control,
             .input-group-text {
               background: transparent;
@@ -222,7 +226,7 @@
               }
               .rtl & {
                 i {
-                  @extend .mr-0;
+                  @extend .me-0;
                   margin-left: 10px;
                 }
                 .badge {
@@ -264,7 +268,7 @@
               width: 12px;
               height: 12px;
               border-radius: 100%;
-              background: theme-color(primary);
+              background: $primary;
               top: 1px;
               border: 1px solid $white;
             }

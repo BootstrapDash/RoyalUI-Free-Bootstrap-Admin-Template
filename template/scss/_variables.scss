@@ -39,6 +39,23 @@ $colors: (
   black:            #000000
 );
 
+$blue:             $blue;
+$indigo:           $indigo;
+$purple:           $purple;
+$pink:             $pink;
+$red:              $red;
+$orange:           $orange;
+$yellow:           $yellow;
+$green:            $green;
+$teal:             $teal;
+$cyan:             $cyan;
+$white:            $white;
+$gray:             #434a54;
+$gray-light:       #aab2bd;
+$gray-lighter:     #e8eff4;
+$gray-lightest:    #e6e9ed;
+$gray-dark:        #0f1531;
+$black:            #000000;
 
 $theme-colors: (
   primary:         #248afd,
@@ -50,6 +67,15 @@ $theme-colors: (
   light:           #f8f9fa,
   dark:            #282f3a
 );
+
+$primary:         #248afd;
+$secondary:       #a3a4a5;
+$success:         #71c016;
+$info:            #68afff;
+$warning:         #f5a623;
+$danger:          #ff4747;
+$light:           #f8f9fa;
+$dark:            #282f3a;
 
 $theme-gradient-colors: (
   primary:         linear-gradient(230deg, #759bff, #843cf6),
@@ -173,7 +199,7 @@ $dropdown-link-hover-bg: #eaeaf1;
 
 //////// TABLES ////////
 
-$table-accent-bg: $content-bg;
+$table-accent-bg: transparent;
 $table-hover-bg:  #eaeaf1;
 $table-cell-padding: 1.25rem .9375rem;
 $table-border-color: $border-color;
@@ -229,7 +255,7 @@ $sidebar-light-bg: $content-bg;
 $sidebar-light-menu-color: #787878;
 $sidebar-light-submenu-color: #656565;
 $sidebar-light-menu-active-bg: initial;
-$sidebar-light-menu-active-color: theme-color(primary);
+$sidebar-light-menu-active-color: $primary;
 $sidebar-light-menu-hover-bg: #e8e7ec;
 $sidebar-light-menu-hover-color: #56595a;
 $sidebar-light-submenu-hover-color: $black;
@@ -281,3 +307,4 @@ $navbar-font-size: 1rem;
 $navbar-icon-font-size: .9375rem;
 
 ///////// NAVBAR ////////
+$buy-nowbanner-padding-top:60px;
